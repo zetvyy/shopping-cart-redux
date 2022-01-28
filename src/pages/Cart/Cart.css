@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.container .card_cart {
+    width: 700px;
+}
+
+.container .card_checkout {
+    width: 350px;
+}
+
+.container img {
+    width: 200px;
+    height: 200px;
+}
+
+.product {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+
