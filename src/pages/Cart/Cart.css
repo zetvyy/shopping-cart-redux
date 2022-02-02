@@ -1,28 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #555454;
+}
+
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .container {
-    max-width: 1200px;
+  max-width: 1200px;
 }
 
 .container .card_cart {
-    width: 700px;
+  width: 850px;
 }
 
 .container .card_checkout {
-    width: 350px;
+  width: 350px;
+}
+
+.container .card_checkout p {
+  position: relative;
+}
+
+.container .card_checkout span {
+  position: absolute;
+  right: 0;
 }
 
 .container img {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 220px;
 }
 
 .product {
-    display: flex;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
+.detail .btn_delete {
+  font-size: 20px;
+  cursor: pointer;
+}
 
+.detail .btn_love {
+  cursor: pointer;
+}
 
+.detail span {
+  cursor: pointer;
+}
+
+.btn_checkout {
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+}
+
+.btn_qty_minus {
+  width: 35px;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+.btn_qty_plus {
+  width: 35px;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+.qty {
+  padding: 0px 12px;
+}
+
+.product_price {
+  position: absolute;
+  right: 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+select {
+  width: 326px;
+  margin-top: 10px;
+  border: 1px solid #eaeaea;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    max-width: 768px;
+  }
+  .container .card_cart {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .container .card_checkout {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  select {
+    width: 672px;
+    margin-bottom: 100px;
+  }
+
+  .btn_qty_minus {
+    margin-left: -70px;
+  }
+
+  .wrapper p {
+    margin-left: -70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+  .container .card_cart {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .container .card_checkout {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  select {
+    width: 372px;
+    margin-bottom: 100px;
+  }
+
+  .btn_qty_minus {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .wrapper p {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .product_price {
+    margin-top: 70px;
+  }
+}
